@@ -28,7 +28,6 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   song_input = gets.chomp
-  # if song_input.is_a?(Integer) && song_input.between?(1, songs.length)
   if song_input.to_i.between?(1, songs.length)
     puts  "Playing #{songs[song_input.to_i - 1]}" 
   elsif 
@@ -49,4 +48,7 @@ end
 def exit_jukebox 
   puts "Goodbye"
 end
+
+def run 
+end 
 
