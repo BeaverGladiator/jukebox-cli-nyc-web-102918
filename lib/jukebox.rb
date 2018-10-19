@@ -1,3 +1,6 @@
+
+require "pry"
+
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -37,7 +40,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   song_input = gets.chomp
   
-  if song_input.is_a? Integer && song_input 
+  if song_input.is_a? Integer && song_input.between(1..songs.length)
     puts songs[]
   elsif 
   end
