@@ -44,6 +44,7 @@ def play(songs)
     binding.pry
     puts songs[]
   elsif 
+  
   end
 end 
 
