@@ -55,6 +55,12 @@ def run(songs)
   user_input = gets.chomp 
   
   case user_input
-e nd 
+  when "help"
+    help
+  when "list"
+    list
+  when "play"
+    play
+  end 
 end 
 
