@@ -42,9 +42,9 @@ def play(songs)
   
   if song_input.is_a?(Integer) && song_input.between?(1, songs.length)
     binding.pry
-    puts songs[]
+    puts songs[song_input - 1]
   elsif 
-  
+    
   end
 end 
 
