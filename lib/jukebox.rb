@@ -41,10 +41,9 @@ def play(songs)
   song_input = gets.chomp
   
   if song_input.is_a?(Integer) && song_input.between?(1, songs.length)
-    binding.pry
-    puts songs[song_input - 1]
+    puts  "Playing #{songs[song_input - 1]}" 
   elsif 
-    
+    if songs.include
   end
 end 
 
