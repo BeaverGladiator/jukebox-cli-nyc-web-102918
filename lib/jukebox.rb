@@ -44,7 +44,13 @@ def play(songs)
     puts  "Playing #{songs[song_input - 1]}" 
   elsif 
     if songs.include?(song_input)
-      
+      songs.each do |song|
+        if song = song_input
+          puts "Playing #{song}"
+        end 
+      end 
+    else 
+      puts "Invalid input, please try again"
     end
   else 
     puts "Invalid input, please try again"
