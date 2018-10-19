@@ -51,16 +51,21 @@ end
 
 def run(songs)
   help
+  
   puts "Please enter a command:"
   user_input = gets.chomp 
   
   case user_input
-  when "help"
-    help
-  when "list"
-    list
-  when "play"
-    play
+    when "help"
+      help
+    when "list"
+      list
+    when "play"
+      play
+    when "exit"
+      exit_jukebox
   end 
+
+
 end 
 
