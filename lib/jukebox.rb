@@ -38,7 +38,8 @@ def play(songs)
   song_input = gets.chomp
   
   if song_input.is_a? Integer 
-    elsif 
+  elsif 
+  end
 end 
 
 
