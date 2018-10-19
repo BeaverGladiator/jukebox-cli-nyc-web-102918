@@ -29,7 +29,7 @@ def help
   puts "- exit : exits this program"
 end 
 
-def list 
+def list(songs)
   songs.each_with_index { |item,index| puts "#{index + 1}. #{item}"}
 end 
 
