@@ -39,7 +39,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   song_input = gets.chomp
-  
+  bining.pry
   if song_input.is_a?(Integer) && song_input.between?(1, songs.length)
     puts  "Playing #{songs[song_input - 1]}" 
   elsif 
