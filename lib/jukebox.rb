@@ -43,7 +43,11 @@ def play(songs)
   if song_input.is_a?(Integer) && song_input.between?(1, songs.length)
     puts  "Playing #{songs[song_input - 1]}" 
   elsif 
-    if songs.include
+    if songs.include?(song_input)
+      
+    end
+  else 
+    puts "Invalid input, please try again"
   end
 end 
 
