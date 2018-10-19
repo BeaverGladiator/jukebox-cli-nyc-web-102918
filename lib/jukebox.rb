@@ -30,7 +30,7 @@ def play(songs)
   song_input = gets.chomp
   # if song_input.is_a?(Integer) && song_input.between?(1, songs.length)
   if song_input.to_i.between?(1, songs.length)
-    puts  "Playing #{songs[song_input - 1]}" 
+    puts  "Playing #{songs[song_input.to_i - 1]}" 
   elsif 
     if songs.include?(song_input)
       songs.each do |song|
