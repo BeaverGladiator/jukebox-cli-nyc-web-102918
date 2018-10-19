@@ -40,7 +40,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   song_input = gets.chomp
   
-  if song_input.is_a? Integer && song_input.between(1..songs.length)
+  if song_input.is_a? Integer && song_input.between?(1..songs.length)
     binding.pry
     puts songs[]
   elsif 
