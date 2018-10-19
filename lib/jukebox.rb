@@ -37,7 +37,8 @@ def play(songs)
   puts "Please enter a song name or number:"
   song_input = gets.chomp
   
-  if song_input 
+  if song_input.is_a? Integer 
+    elsif 
 end 
 
 
